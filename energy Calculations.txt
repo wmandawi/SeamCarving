@@ -1,0 +1,47 @@
+if (x == 0 && y == 0) {
+            double deltax = Math.abs(borderdelta(pic.get(x + (width() - 1), y), pic.get(x + 1, y)));
+            double deltay = Math.abs(borderdelta(pic.get(x, y + (height()-1)), pic.get(x, y + 1)));
+            return deltax + deltay;
+        }
+
+        if (y == 0) {
+            double deltax = Math.abs(borderdelta(pic.get(x - 1, y), pic.get(x + 1, y)));
+            double deltay = Math.abs(borderdelta(pic.get(x, y + (height()-1)), pic.get(x, y + 1)));
+            return deltax + deltay;
+        }
+
+        if (x == (width() - 1)) {
+            double deltax = Math.abs(borderdelta(pic.get(x - (width() - 1), y), pic.get(x - 1, y)));
+            double deltay = Math.abs(borderdelta(pic.get(x, y + (height()-1)), pic.get(x, y + 1)));
+            return deltax + deltay;
+        }
+
+        if (x == 0) {
+            double deltax = Math.abs(borderdelta(pic.get(x + (width() - 1), y), pic.get(x + 1, y)));
+            double deltay = Math.abs(borderdelta(pic.get(x, y - 1), pic.get(x, y + 1)));
+            return deltax + deltay;
+        }
+
+        if (x == 0 && y == (height() - 1)) {
+            double deltax = Math.abs(borderdelta(pic.get(x - (width() - 1), y), pic.get(x + 1, y)));
+            double deltay = Math.abs(borderdelta(pic.get(x, y - 1), pic.get(x, y - (height() - 1))));
+            return deltax + deltay;
+        }
+
+        if (y == (height() - 1)) {
+            double deltax = Math.abs(borderdelta(pic.get(x - 1, y), pic.get(x + 1, y)));
+            double deltay = Math.abs(borderdelta(pic.get(x, y - 1), pic.get(x, y - (height() - 1))));
+            return deltax + deltay;
+        }
+
+        if (x == (width() - 1) && y == (height() - 1)) {
+            double deltax = Math.abs(borderdelta(pic.get(x - (width() - 1), y), pic.get(x - 1, y)));
+            double deltay = Math.abs(borderdelta(pic.get(x, y - 1), pic.get(x, y - (height() - 1))));
+            return deltax + deltay;
+        }
+
+        if (x == (width() - 1)) {
+            double deltax = Math.abs(borderdelta(pic.get(x - (width() - 1), y), pic.get(x - 1, y)));
+            double deltay = Math.abs(borderdelta(pic.get(x, y + 1), pic.get(x, y - 1)));
+            return deltax + deltay;
+        }

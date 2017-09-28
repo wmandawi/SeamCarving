@@ -1,0 +1,8 @@
+#BlueJ class context
+comment0.params=sc
+comment0.target=void\ showHorizontalSeam(SeamCarver)
+comment1.params=sc
+comment1.target=void\ showVerticalSeam(SeamCarver)
+comment2.params=args
+comment2.target=void\ main(java.lang.String[])
+numComments=3

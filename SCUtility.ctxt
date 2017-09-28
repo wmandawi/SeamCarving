@@ -1,0 +1,14 @@
+#BlueJ class context
+comment0.params=W\ H
+comment0.target=Picture\ randomPicture(int,\ int)
+comment1.params=sc
+comment1.target=double[][]\ toEnergyMatrix(SeamCarver)
+comment2.params=sc
+comment2.target=void\ showEnergy(SeamCarver)
+comment3.params=sc
+comment3.target=Picture\ toEnergyPicture(SeamCarver)
+comment4.params=grayValues
+comment4.target=Picture\ doubleToPicture(double[][])
+comment5.params=picture\ isHorizontal\ seam
+comment5.target=Picture\ seamOverlay(Picture,\ boolean,\ int[])
+numComments=6
